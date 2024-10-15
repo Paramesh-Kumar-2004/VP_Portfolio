@@ -1,0 +1,165 @@
+@media screen and (max-width:450px) {
+
+
+    /* a {
+        text-decoration: none;
+        padding: 6px;
+        margin: 3px;
+        border: 3px solid rgb(255, 3, 192);
+        border-radius: 50px;
+        background: linear-gradient(rgb(0, 184, 245), 80%, lightcyan);
+        transition: transform 0.3s ease-in-out;
+    } */
+
+    #ul1 {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(lightpink, 60%, red);
+        left: 62%;
+        height: 42vh;
+        width: 26vw;
+        border: rgb(65, 249, 255) solid 3px;
+        border-radius: 50px;
+        /* gap: 20px; */
+        top: -2px;
+        position: absolute;
+        animation: zoomin 0.5s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #ul1 li {
+        margin: 3px;
+    }
+    #loc{
+        margin: 0 26px 0 8px;
+        color: rgb(0, 0, 0);
+        text-align: justify;
+    }
+
+    header {
+        /* background-color: rgb(233, 166, 189); */
+        background-color: rgb(212, 64, 116);
+        width: 100%;
+        color: aquamarine;
+        padding: 15px;
+        margin: 1px;
+        border-radius: 30px;
+        position: sticky;
+        top: 0;
+    }
+
+    #main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #m-nav {
+        /* width: 100%; */
+        /* display: block; */
+        display: flex;
+        font-size: 26px;
+        margin: 2px;
+        font-size: 32px;
+        padding: 2px;
+        color: blue;
+        padding-bottom: 5px;
+        /* border: 3px solid green; */
+        /* border-radius: 50px; */
+        /* background: blue; */
+        cursor: pointer;
+        animation: slidetop 2s ease;
+        position: absolute;
+        left: 85%;
+        /* z-index: -1; */
+    }
+
+    #name1 {
+        padding: 14px;
+        font-size: 18px;
+        width: 95%;
+        border: solid none;
+        color: black;
+        background: linear-gradient(pink, 80%, rgb(65, 249, 255));
+        border-radius: 40px;
+        font-weight: bolder;
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+        animation: slidetop 2s ease;
+    }
+
+    #name3 {
+        /* display: flex; */
+        margin-left: 26px;
+        margin-top: 82%;
+    }
+
+    #home_content{
+        width: 100%;
+        margin-left: 10px;
+    }
+    #about_content{
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .p1 {
+        scroll-margin-top: 92px;
+        margin-bottom: 14%;
+        margin-top: 6cm;
+    }
+
+    #mylogo2 {
+        display: none;
+    }
+    #mylogo1 {
+        display: flex;
+        flex-wrap: wrap;
+        top: 24%;
+        right: 30%;
+        width: 180px;
+        height: 180px;
+        border: 5px solid fuchsia;
+        border-radius: 50%;
+        background: pink;
+        background-image: url("src/Me3.jpg");
+        background-size: cover;
+        /* background-position: 200%; */
+        /* position: absolute; */
+        z-index: -1;
+        /* animation: zoomout 2s ease; */
+        /* box-shadow: 5px 0px 50px rgba(255, 105, 180, 0.8),
+            0 0 40px rgba(255, 20, 147, 0.6),
+            0 0 60px rgba(219, 112, 147, 0.4); */
+        filter: drop-shadow(1px 1px 1px pink);
+        /* position:static; */
+    }
+
+
+
+    @keyframes slidetop {
+        0% {
+            transform: translateY(-100px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes zoomin {
+        0% {
+            transform: scale(0.9);
+            opacity: 24%;
+        }
+    
+        100% {
+            transform: scale(1);
+            opacity: 100%;
+        }
+    }
+}
+
+
