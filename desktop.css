@@ -8,6 +8,7 @@
 html {
     scroll-behavior: smooth;
     background: lightsteelblue;
+    /* background: rgba(160, 216, 238, 0.808); */
 }
 
 li {
