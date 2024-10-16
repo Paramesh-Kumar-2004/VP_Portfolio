@@ -79,6 +79,76 @@ header {
     background: linear-gradient(pink,50%,rgba(65, 249, 255, 0.658));
 }
 
+
+/* Resume Code */
+
+#resume_div{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+
+#resume {
+    position: relative;
+    overflow: hidden;
+    height: 2.5rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #12393a;
+    background: radial-gradient(rgb(255, 0, 0),80%,pink);
+    background: linear-gradient(
+      /* 82.3deg, */
+      rgb(255, 0, 128) 10%,
+      rgb(218, 0, 0) 90%
+    );
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #resume:hover::before {
+    transform: scaleX(1);
+  }
+  
+  #resume-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  #resume::before {
+    display: flex;
+    content: "Download Now";
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(94, 0, 235) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
+  #resume:hover::before {
+    content: "Download Now";
+  }
+  
+  #resume:active::before {
+    content: "Downloading";
+  }
+
+/* Resume Code Over */
+
+
 #name3 {
     margin-left: 10%;
     color: blue;
